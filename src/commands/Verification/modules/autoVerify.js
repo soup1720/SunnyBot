@@ -34,7 +34,7 @@ export default {
                         .setName("criteria")
                         .setDescription("Criteria for automatic verification")
                         .addChoices(
-                            { name: "Account Age", value: "account_age" },
+                            { name: "Password", value: "msg. content === 'hawthorne'" },
                             { name: "No Criteria", value: "none" }
                         )
                         .setRequired(true)

@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "sunny days",     // this is what people actually see
+        state: "Sunshine | est. 2026",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -313,7 +313,7 @@ export const botConfig = {
       // - "none"        = everyone is auto-verified immediately
       // - "account_age" = account must be older than set days
       // - "server_size" = auto-verify everyone only in smaller servers
-      defaultCriteria: "none",
+      defaultCriteria: "account_age",
 
       // Days used when `defaultCriteria` is `account_age`.
       defaultAccountAgeDays: 7,
@@ -378,9 +378,9 @@ export const botConfig = {
     defaultGoodbyeMessage:
       "{user} has left the server. We now have {memberCount} members.",
     // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    defaultWelcomeChannel: "#welcome",
     // Channel ID for goodbye messages.
-    defaultGoodbyeChannel: null,
+    defaultGoodbyeChannel: "#goodbye",
   },
 
   // =========================
